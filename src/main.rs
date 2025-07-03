@@ -38,9 +38,9 @@ fn main() {
                         _ => println!("Not found"),
                     }
                 }
-                println!("EOF null")
+                println!("EOF  null")
             } else {
-                println!("EOF null")
+                println!("EOF  null")
             }
         }
         _ => {
