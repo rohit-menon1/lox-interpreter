@@ -22,12 +22,26 @@ fn main() {
                 String::new()
             });
 
-            // Uncomment this block to pass the first stage
-            // if !file_contents.is_empty() {
-            //     panic!("Scanner not implemented");
-            // } else {
-            //     println!("EOF  null"); // Placeholder, replace this line when implementing the scanner
-            // }
+            if !file_contents.is_empty() {
+                for i in file_contents.chars() {
+                    match i {
+                        '(' => println!("LEFT_PAREN ( null"),
+                        ')' => println!("RIGHT_PAREN ) null"),
+                        '{' => println!("LEFT_BRACE `{{` null"),
+                        '}' => println!("RIGHT_BRACE `}}` null"),
+                        '*' => println!("STAR * null"),
+                        '.' => println!("DOT . null"),
+                        ',' => println!("COMMA , null"),
+                        '+' => println!("PLUS + null"),
+                        '-' => println!("MINUS - null"),
+                        ';' => println!("SEMICOLON ; null"),
+                        _ => println!("Not found"),
+                    }
+                }
+                println!("EOF null")
+            } else {
+                println!("EOF null")
+            }
         }
         _ => {
             writeln!(io::stderr(), "Unknown command: {}", command).unwrap();
