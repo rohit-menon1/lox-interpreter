@@ -27,8 +27,8 @@ fn main() {
                     match i {
                         '(' => println!("LEFT_PAREN ( null"),
                         ')' => println!("RIGHT_PAREN ) null"),
-                        '{' => println!("LEFT_BRACE `{{` null"),
-                        '}' => println!("RIGHT_BRACE `}}` null"),
+                        '{' => println!("LEFT_BRACE {{ null"),
+                        '}' => println!("RIGHT_BRACE }} null"),
                         '*' => println!("STAR * null"),
                         '.' => println!("DOT . null"),
                         ',' => println!("COMMA , null"),
