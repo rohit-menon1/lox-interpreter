@@ -1,0 +1,13 @@
+class A {
+  method() {
+    print "A";
+  }
+}
+class B < A {
+  method() {
+    super.method();
+    print "B";
+  }
+}
+var obj = B();
+obj.method();

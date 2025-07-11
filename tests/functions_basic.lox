@@ -1,0 +1,4 @@
+fun sayHi(name) {
+  print "Hi " + name;
+}
+sayHi("Rohit");

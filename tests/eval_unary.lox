@@ -1,0 +1,4 @@
+print -73;
+print !true;
+print !10.40;
+print !((false));
